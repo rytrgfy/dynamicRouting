@@ -12,7 +12,7 @@ app.use(cors()); // Enable CORS
 app.use(express.json());
 
 // Routes
-app.use('/api/users', userRoutes);
+app.use('/api', userRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
